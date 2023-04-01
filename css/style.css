@@ -298,3 +298,32 @@ button {
 .scrolled .navbar-nav .nav-item > a {
   color: #222 !important;
 }
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .topping-main {
+    background: transparent;
+    flex-direction: column;
+
+    padding-top: 65px;
+  }
+
+  #introduction-part,
+  .home-about-right {
+    text-align: center;
+  }
+
+  .home-about h6 {
+    margin-top: 15px;
+  }
+
+  #links > button {
+    margin-bottom: 10px;
+  }
+
+  form .form-group:last-child {
+    text-align: center;
+  }
+}

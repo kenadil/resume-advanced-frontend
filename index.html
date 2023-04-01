@@ -463,9 +463,10 @@
         var hT = $("#scroll-to").offset().top,
           hH = $("#scroll-to").outerHeight(),
           wH = $(window).height(),
-          wS = $(this).scrollTop();
+          wS = $(this).scrollTop(),
+          wW = $(window).width();
 
-        if (wS >= hT + hH - wH) sticky.addClass("scrolled");
+        if (wS >= hT + hH - wH || wW < 600) sticky.addClass("scrolled");
         else sticky.removeClass("scrolled");
       });
     </script>
